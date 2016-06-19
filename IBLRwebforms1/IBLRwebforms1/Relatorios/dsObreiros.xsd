@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsObreiros" targetNamespace="http://tempuri.org/dsObreiros.xsd" xmlns:mstns="http://tempuri.org/dsObreiros.xsd" xmlns="http://tempuri.org/dsObreiros.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" GeneratorFunctionsComponentClassName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" UserFunctionsComponentName="QueriesTableAdapter" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="IBLR" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="IBLR (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.IBLR.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsObreiros" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsObreiros" msprop:Generator_UserDSName="dsObreiros">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NOME" msprop:Generator_ColumnVarNameInTable="columnNOME" msprop:Generator_ColumnPropNameInRow="NOME" msprop:Generator_ColumnPropNameInTable="NOMEColumn" msprop:Generator_UserColumnName="NOME" type="xs:string" minOccurs="0" />
+              <xs:element name="DATA_NASCIMENTO" msprop:Generator_ColumnVarNameInTable="columnDATA_NASCIMENTO" msprop:Generator_ColumnPropNameInRow="DATA_NASCIMENTO" msprop:Generator_ColumnPropNameInTable="DATA_NASCIMENTOColumn" msprop:Generator_UserColumnName="DATA_NASCIMENTO" type="xs:string" minOccurs="0" />
+              <xs:element name="ESTADO_CIVIL" msprop:Generator_ColumnVarNameInTable="columnESTADO_CIVIL" msprop:Generator_ColumnPropNameInRow="ESTADO_CIVIL" msprop:Generator_ColumnPropNameInTable="ESTADO_CIVILColumn" msprop:Generator_UserColumnName="ESTADO_CIVIL" type="xs:string" minOccurs="0" />
+              <xs:element name="CONJUGUE" msprop:Generator_ColumnVarNameInTable="columnCONJUGUE" msprop:Generator_ColumnPropNameInRow="CONJUGUE" msprop:Generator_ColumnPropNameInTable="CONJUGUEColumn" msprop:Generator_UserColumnName="CONJUGUE" type="xs:string" minOccurs="0" />
+              <xs:element name="DATA_ADMISSAO" msprop:Generator_ColumnVarNameInTable="columnDATA_ADMISSAO" msprop:Generator_ColumnPropNameInRow="DATA_ADMISSAO" msprop:Generator_ColumnPropNameInTable="DATA_ADMISSAOColumn" msprop:Generator_UserColumnName="DATA_ADMISSAO" type="xs:string" minOccurs="0" />
+              <xs:element name="DATA_BATISMO" msprop:Generator_ColumnVarNameInTable="columnDATA_BATISMO" msprop:Generator_ColumnPropNameInRow="DATA_BATISMO" msprop:Generator_ColumnPropNameInTable="DATA_BATISMOColumn" msprop:Generator_UserColumnName="DATA_BATISMO" type="xs:string" minOccurs="0" />
+              <xs:element name="CREDENCIAL" msprop:Generator_ColumnVarNameInTable="columnCREDENCIAL" msprop:Generator_ColumnPropNameInRow="CREDENCIAL" msprop:Generator_ColumnPropNameInTable="CREDENCIALColumn" msprop:Generator_UserColumnName="CREDENCIAL" type="xs:string" minOccurs="0" />
+              <xs:element name="DES_CARGO" msprop:Generator_ColumnVarNameInTable="columnDES_CARGO" msprop:Generator_ColumnPropNameInRow="DES_CARGO" msprop:Generator_ColumnPropNameInTable="DES_CARGOColumn" msprop:Generator_UserColumnName="DES_CARGO" type="xs:string" minOccurs="0" />
+              <xs:element name="DES_DEPARTAMENTO" msprop:Generator_ColumnVarNameInTable="columnDES_DEPARTAMENTO" msprop:Generator_ColumnPropNameInRow="DES_DEPARTAMENTO" msprop:Generator_ColumnPropNameInTable="DES_DEPARTAMENTOColumn" msprop:Generator_UserColumnName="DES_DEPARTAMENTO" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,4173 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IBLRwebforms1
+</name>
+</assembly>
+<members>
+<member name="T:IBLRwebforms1.IBLRDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:IBLRwebforms1.IBLRDataSet.IBLR_MEMBROSDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:IBLRwebforms1.IBLRDataSet.IBLR_MEMBROSRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:IBLRwebforms1.IBLRDataSet.IBLR_MEMBROSRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:IBLRwebforms1.IBLRDataSetTableAdapters.IBLR_MEMBROSTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:IBLRwebforms1.IBLRDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:IBLRwebforms1.IBLRDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(IBLRwebforms1.IBLRDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:IBLRwebforms1.IBLRDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(IBLRwebforms1.IBLRDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:IBLRwebforms1.IBLRDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(IBLRwebforms1.IBLRDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:IBLRwebforms1.IBLRDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:IBLRwebforms1.IBLRDataSetTableAdapters.TableAdapterManager.UpdateAll(IBLRwebforms1.IBLRDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:IBLRwebforms1.IBLRDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:IBLRwebforms1.IBLRDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="F:IBLRwebforms1.login1._frmLogin">
+<summary>
+frmLogin control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.login1._RequiredFieldValidator1">
+<summary>
+RequiredFieldValidator1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.login1._UserName">
+<summary>
+UserName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.login1._RequiredFieldValidator2">
+<summary>
+RequiredFieldValidator2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.login1._Password">
+<summary>
+Password control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.login1._ImageButton1">
+<summary>
+ImageButton1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="P:IBLRwebforms1.Membro.NATURALIDADE">
+ <summary>
+ Naturalidade é o ID da cidade onde o Membro nasceu
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDepartamento._ScriptManager1">
+<summary>
+ScriptManager1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDepartamento._UpdatePanel1">
+<summary>
+UpdatePanel1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDepartamento._btnSalvar">
+<summary>
+btnSalvar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDepartamento._btnNovoRegistro">
+<summary>
+btnNovoRegistro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDepartamento._ValidationSummary1">
+<summary>
+ValidationSummary1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDepartamento._lblDepartamento">
+<summary>
+lblDepartamento control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDepartamento._RequiredFieldValidator1">
+<summary>
+RequiredFieldValidator1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDepartamento._lblIdDados">
+<summary>
+lblIdDados control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDepartamento._txtDepartamento">
+<summary>
+txtDepartamento control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDepartamento._ckbAtivo">
+<summary>
+ckbAtivo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDepartamento._lblMembro">
+<summary>
+lblMembro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDepartamento._RequiredFieldValidator2">
+<summary>
+RequiredFieldValidator2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDepartamento._ddMembros">
+<summary>
+ddMembros control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDepartamento._gdDepartamentos">
+<summary>
+gdDepartamentos control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDespesas._ScriptManager1">
+<summary>
+ScriptManager1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDespesas._UpdatePanel1">
+<summary>
+UpdatePanel1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDespesas._btnSalvar">
+<summary>
+btnSalvar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDespesas._btnNovoRegistro">
+<summary>
+btnNovoRegistro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDespesas._btnConsultar">
+<summary>
+btnConsultar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDespesas._pnCadastro">
+<summary>
+pnCadastro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDespesas._ValidationSummary1">
+<summary>
+ValidationSummary1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDespesas._lblCongregacao">
+<summary>
+lblCongregacao control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDespesas._RequiredFieldValidator4">
+<summary>
+RequiredFieldValidator4 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDespesas._ddCongregacao">
+<summary>
+ddCongregacao control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDespesas._lblTipoDespesa">
+<summary>
+lblTipoDespesa control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDespesas._RequiredFieldValidator2">
+<summary>
+RequiredFieldValidator2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDespesas._lblValorDespesa">
+<summary>
+lblValorDespesa control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDespesas._RequiredFieldValidator1">
+<summary>
+RequiredFieldValidator1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDespesas._lblIdDados">
+<summary>
+lblIdDados control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDespesas._lblDataLancamento">
+<summary>
+lblDataLancamento control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDespesas._RequiredFieldValidator3">
+<summary>
+RequiredFieldValidator3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDespesas._ddTipoDespesa">
+<summary>
+ddTipoDespesa control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDespesas._txtValorDespesa">
+<summary>
+txtValorDespesa control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDespesas._txtDataLancamento">
+<summary>
+txtDataLancamento control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDespesas._btnAddLancamento">
+<summary>
+btnAddLancamento control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDespesas._lblDespesasRelacionados">
+<summary>
+lblDespesasRelacionados control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDespesas._gdDespesas">
+<summary>
+gdDespesas control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDespesas._pnConsulta">
+<summary>
+pnConsulta control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDespesas._lblConsultarDespesas">
+<summary>
+lblConsultarDespesas control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDespesas._lblCongregacaoConsulta">
+<summary>
+lblCongregacaoConsulta control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDespesas._RequiredFieldValidator7">
+<summary>
+RequiredFieldValidator7 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDespesas._ddCongregacaoConsulta">
+<summary>
+ddCongregacaoConsulta control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDespesas._lblPeriodo">
+<summary>
+lblPeriodo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDespesas._lblDataInicio">
+<summary>
+lblDataInicio control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDespesas._RequiredFieldValidator5">
+<summary>
+RequiredFieldValidator5 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDespesas._lblDataFim">
+<summary>
+lblDataFim control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDespesas._RequiredFieldValidator6">
+<summary>
+RequiredFieldValidator6 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDespesas._ValidationSummary2">
+<summary>
+ValidationSummary2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDespesas._txtDataInicio">
+<summary>
+txtDataInicio control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDespesas._txtDataFim">
+<summary>
+txtDataFim control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDespesas._btnConsultarDespesas">
+<summary>
+btnConsultarDespesas control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDespesas._btnExportarExcel">
+<summary>
+btnExportarExcel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDespesas._gdDespesaConsulta">
+<summary>
+gdDespesaConsulta control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDizimos._ScriptManager1">
+<summary>
+ScriptManager1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDizimos._UpdatePanel1">
+<summary>
+UpdatePanel1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDizimos._btnSalvar">
+<summary>
+btnSalvar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDizimos._btnNovoRegistro">
+<summary>
+btnNovoRegistro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDizimos._btnConsultar">
+<summary>
+btnConsultar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDizimos._pnCadastro">
+<summary>
+pnCadastro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDizimos._ValidationSummary1">
+<summary>
+ValidationSummary1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDizimos._lblMembro">
+<summary>
+lblMembro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDizimos._RequiredFieldValidator2">
+<summary>
+RequiredFieldValidator2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDizimos._lblValorDizimo">
+<summary>
+lblValorDizimo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDizimos._RequiredFieldValidator1">
+<summary>
+RequiredFieldValidator1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDizimos._lblIdDados">
+<summary>
+lblIdDados control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDizimos._lblDataLancamento">
+<summary>
+lblDataLancamento control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDizimos._RequiredFieldValidator3">
+<summary>
+RequiredFieldValidator3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDizimos._ddMembro">
+<summary>
+ddMembro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDizimos._txtValorDizimo">
+<summary>
+txtValorDizimo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDizimos._txtDataLancamento">
+<summary>
+txtDataLancamento control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDizimos._btnAddLancamento">
+<summary>
+btnAddLancamento control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDizimos._lblDizimosRelacionados">
+<summary>
+lblDizimosRelacionados control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDizimos._gdDizimos">
+<summary>
+gdDizimos control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDizimos._pnConsulta">
+<summary>
+pnConsulta control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDizimos._lblConsultarDizimos">
+<summary>
+lblConsultarDizimos control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDizimos._lblPeriodo">
+<summary>
+lblPeriodo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDizimos._lblDataInicio">
+<summary>
+lblDataInicio control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDizimos._RequiredFieldValidator4">
+<summary>
+RequiredFieldValidator4 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDizimos._lblDataFim">
+<summary>
+lblDataFim control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDizimos._RequiredFieldValidator5">
+<summary>
+RequiredFieldValidator5 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDizimos._ValidationSummary2">
+<summary>
+ValidationSummary2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDizimos._txtDataInicio">
+<summary>
+txtDataInicio control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDizimos._txtDataFim">
+<summary>
+txtDataFim control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDizimos._btnConsultarDizimo">
+<summary>
+btnConsultarDizimo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDizimos._btnExportarExcel">
+<summary>
+btnExportarExcel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarDizimos._gdDizimoConsulta">
+<summary>
+gdDizimoConsulta control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarOfertas._ScriptManager1">
+<summary>
+ScriptManager1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarOfertas._UpdatePanel1">
+<summary>
+UpdatePanel1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarOfertas._btnSalvar">
+<summary>
+btnSalvar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarOfertas._btnNovoRegistro">
+<summary>
+btnNovoRegistro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarOfertas._btnConsultar">
+<summary>
+btnConsultar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarOfertas._pnCadastro">
+<summary>
+pnCadastro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarOfertas._ValidationSummary1">
+<summary>
+ValidationSummary1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarOfertas._lblCongregacao">
+<summary>
+lblCongregacao control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarOfertas._RequiredFieldValidator6">
+<summary>
+RequiredFieldValidator6 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarOfertas._ddCongregacao">
+<summary>
+ddCongregacao control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarOfertas._lblMembro">
+<summary>
+lblMembro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarOfertas._RequiredFieldValidator2">
+<summary>
+RequiredFieldValidator2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarOfertas._lblValorDizimo">
+<summary>
+lblValorDizimo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarOfertas._RequiredFieldValidator1">
+<summary>
+RequiredFieldValidator1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarOfertas._lblIdDados">
+<summary>
+lblIdDados control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarOfertas._lblDataLancamento">
+<summary>
+lblDataLancamento control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarOfertas._RequiredFieldValidator3">
+<summary>
+RequiredFieldValidator3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarOfertas._ddTipoOferta">
+<summary>
+ddTipoOferta control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarOfertas._txtValorOferta">
+<summary>
+txtValorOferta control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarOfertas._txtDataLancamento">
+<summary>
+txtDataLancamento control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarOfertas._btnAddLancamento">
+<summary>
+btnAddLancamento control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarOfertas._lblOfertasRelacionados">
+<summary>
+lblOfertasRelacionados control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarOfertas._gdOfertas">
+<summary>
+gdOfertas control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarOfertas._pnConsulta">
+<summary>
+pnConsulta control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarOfertas._lblConsultarOfertas">
+<summary>
+lblConsultarOfertas control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarOfertas._lblCongregacaoConsulta">
+<summary>
+lblCongregacaoConsulta control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarOfertas._RequiredFieldValidator7">
+<summary>
+RequiredFieldValidator7 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarOfertas._ddCongregacaoConsulta">
+<summary>
+ddCongregacaoConsulta control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarOfertas._lblPeriodo">
+<summary>
+lblPeriodo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarOfertas._lblDataInicio">
+<summary>
+lblDataInicio control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarOfertas._RequiredFieldValidator4">
+<summary>
+RequiredFieldValidator4 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarOfertas._lblDataFim">
+<summary>
+lblDataFim control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarOfertas._RequiredFieldValidator5">
+<summary>
+RequiredFieldValidator5 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarOfertas._ValidationSummary2">
+<summary>
+ValidationSummary2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarOfertas._txtDataInicio">
+<summary>
+txtDataInicio control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarOfertas._txtDataFim">
+<summary>
+txtDataFim control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarOfertas._btnConsultarOfertas">
+<summary>
+btnConsultarOfertas control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarOfertas._btnExportarExcel">
+<summary>
+btnExportarExcel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarOfertas._gdOfertasConsulta">
+<summary>
+gdOfertasConsulta control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarTipoDespesa._ScriptManager1">
+<summary>
+ScriptManager1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarTipoDespesa._UpdatePanel1">
+<summary>
+UpdatePanel1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarTipoDespesa._btnSalvar">
+<summary>
+btnSalvar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarTipoDespesa._btnNovoRegistro">
+<summary>
+btnNovoRegistro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarTipoDespesa._ValidationSummary1">
+<summary>
+ValidationSummary1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarTipoDespesa._lblTipoDespesa">
+<summary>
+lblTipoDespesa control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarTipoDespesa._RequiredFieldValidator1">
+<summary>
+RequiredFieldValidator1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarTipoDespesa._lblIdDados">
+<summary>
+lblIdDados control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarTipoDespesa._txtTipoDespesa">
+<summary>
+txtTipoDespesa control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarTipoDespesa._ckbAtivo">
+<summary>
+ckbAtivo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarTipoDespesa._gdTipoDespesas">
+<summary>
+gdTipoDespesas control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarTipoOferta._ScriptManager1">
+<summary>
+ScriptManager1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarTipoOferta._UpdatePanel1">
+<summary>
+UpdatePanel1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarTipoOferta._btnSalvar">
+<summary>
+btnSalvar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarTipoOferta._btnNovoRegistro">
+<summary>
+btnNovoRegistro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarTipoOferta._ValidationSummary1">
+<summary>
+ValidationSummary1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarTipoOferta._lblTipoOferta">
+<summary>
+lblTipoOferta control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarTipoOferta._RequiredFieldValidator1">
+<summary>
+RequiredFieldValidator1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarTipoOferta._lblIdDados">
+<summary>
+lblIdDados control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarTipoOferta._txtTipoOferta">
+<summary>
+txtTipoOferta control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarTipoOferta._ckbAtivo">
+<summary>
+ckbAtivo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarTipoOferta._gdTipoOfertas">
+<summary>
+gdTipoOfertas control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarVisitantes._ScriptManager1">
+<summary>
+ScriptManager1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarVisitantes._UpdatePanel1">
+<summary>
+UpdatePanel1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarVisitantes._btnSalvar">
+<summary>
+btnSalvar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarVisitantes._btnNovoRegistro">
+<summary>
+btnNovoRegistro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarVisitantes._btnConsultar">
+<summary>
+btnConsultar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarVisitantes._pnConsulta">
+<summary>
+pnConsulta control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarVisitantes._lblConsultarCampos">
+<summary>
+lblConsultarCampos control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarVisitantes._lblCongregacaoConsulta">
+<summary>
+lblCongregacaoConsulta control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarVisitantes._RequiredFieldValidator8">
+<summary>
+RequiredFieldValidator8 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarVisitantes._ddCongregacaoConsulta">
+<summary>
+ddCongregacaoConsulta control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarVisitantes._lblPeriodo">
+<summary>
+lblPeriodo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarVisitantes._lblDataInicio">
+<summary>
+lblDataInicio control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarVisitantes._RequiredFieldValidator4">
+<summary>
+RequiredFieldValidator4 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarVisitantes._lblDataFim">
+<summary>
+lblDataFim control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarVisitantes._RequiredFieldValidator7">
+<summary>
+RequiredFieldValidator7 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarVisitantes._ValidationSummary3">
+<summary>
+ValidationSummary3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarVisitantes._txtDataInicio">
+<summary>
+txtDataInicio control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarVisitantes._txtDataFim">
+<summary>
+txtDataFim control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarVisitantes._btnConsultarVisitantes">
+<summary>
+btnConsultarVisitantes control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarVisitantes._btnExportarExcel">
+<summary>
+btnExportarExcel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarVisitantes._gdVisitantes">
+<summary>
+gdVisitantes control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarVisitantes._pnCadastro">
+<summary>
+pnCadastro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarVisitantes._ValidationSummary1">
+<summary>
+ValidationSummary1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarVisitantes._lblDadosCampos">
+<summary>
+lblDadosCampos control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarVisitantes._lblDataVisita">
+<summary>
+lblDataVisita control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarVisitantes._RequiredFieldValidator2">
+<summary>
+RequiredFieldValidator2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarVisitantes._lblCongregacao">
+<summary>
+lblCongregacao control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarVisitantes._RequiredFieldValidator3">
+<summary>
+RequiredFieldValidator3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarVisitantes._txtDataVisita">
+<summary>
+txtDataVisita control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarVisitantes._ddCongregacao">
+<summary>
+ddCongregacao control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarVisitantes._lblNome">
+<summary>
+lblNome control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarVisitantes._RequiredFieldValidator1">
+<summary>
+RequiredFieldValidator1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarVisitantes._lblIdDados">
+<summary>
+lblIdDados control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarVisitantes._lblConvidadoPor">
+<summary>
+lblConvidadoPor control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarVisitantes._txtNome">
+<summary>
+txtNome control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarVisitantes._txtConvidadoPor">
+<summary>
+txtConvidadoPor control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarVisitantes._lblEndereco">
+<summary>
+lblEndereco control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarVisitantes._txtEndereco">
+<summary>
+txtEndereco control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarVisitantes._lblContatos">
+<summary>
+lblContatos control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarVisitantes._ValidationSummary2">
+<summary>
+ValidationSummary2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarVisitantes._lblTipoContato">
+<summary>
+lblTipoContato control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarVisitantes._RequiredFieldValidator5">
+<summary>
+RequiredFieldValidator5 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarVisitantes._lblContato">
+<summary>
+lblContato control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarVisitantes._RequiredFieldValidator6">
+<summary>
+RequiredFieldValidator6 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarVisitantes._ddTipoContato">
+<summary>
+ddTipoContato control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarVisitantes._txtContato">
+<summary>
+txtContato control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarVisitantes._btnAddContato">
+<summary>
+btnAddContato control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarVisitantes._lblContatosRelacionados">
+<summary>
+lblContatosRelacionados control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarVisitantes._gdContatos">
+<summary>
+gdContatos control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.WebForm2._lblMsg">
+<summary>
+lblMsg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.WebForm2._Label1">
+<summary>
+Label1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.WebForm2._UserName">
+<summary>
+UserName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.WebForm2._RequiredFieldValidator1">
+<summary>
+RequiredFieldValidator1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.WebForm2._Label2">
+<summary>
+Label2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.WebForm2._Email">
+<summary>
+Email control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.WebForm2._RequiredFieldValidator2">
+<summary>
+RequiredFieldValidator2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.WebForm2._Label3">
+<summary>
+Label3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.WebForm2._Password">
+<summary>
+Password control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.WebForm2._RequiredFieldValidator3">
+<summary>
+RequiredFieldValidator3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.WebForm2._Label4">
+<summary>
+Label4 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.WebForm2._ConfirmPassword">
+<summary>
+ConfirmPassword control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.WebForm2._RequiredFieldValidator4">
+<summary>
+RequiredFieldValidator4 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.WebForm2._CompareValidator1">
+<summary>
+CompareValidator1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.WebForm2._Button1">
+<summary>
+Button1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.Login._lblErro">
+<summary>
+lblErro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.Login._UserName">
+<summary>
+UserName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.Login._Password">
+<summary>
+Password control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.Login._btnLogar">
+<summary>
+btnLogar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.Login._RegisterHyperLink">
+<summary>
+RegisterHyperLink control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.Manage._successMessage">
+<summary>
+successMessage control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.Manage._setPassword">
+<summary>
+setPassword control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.Manage._password">
+<summary>
+password control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.Manage._confirmPassword">
+<summary>
+confirmPassword control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.Manage._changePassword">
+<summary>
+changePassword control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.OpenAuthProviders._providerDetails">
+<summary>
+providerDetails control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.RegisterExternalLogin._userNameForm">
+<summary>
+userNameForm control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.RegisterExternalLogin._userName">
+<summary>
+userName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="M:IBLRwebforms1.ConexaoDB.OpenConnection(System.Data.SqlClient.SqlConnection)">
+ <summary>
+ Abre uma conexao passada por parâmetro
+ </summary>
+ <param name="conexao"></param>
+ <remarks></remarks>
+</member>
+<member name="M:IBLRwebforms1.ConexaoDB.RetornaConexaoIBLR">
+ <summary>
+  Retorna uma conexão com o banco de dados
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:IBLRwebforms1.ConexaoDB.ExecuteSelectSQL(System.Data.SqlClient.SqlConnection,System.String)">
+ <summary>
+ executa uma instrução SQL retonando um ExecuteReader.   
+ </summary>
+ <param name="conexao"></param>
+ <param name="SQL"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:IBLRwebforms1.My.MyWebExtension">
+ <summary>
+ Module used to define the properties that are available in the My Namespace for Web projects.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:IBLRwebforms1.My.MyWebExtension.Computer">
+ <summary>
+ Returns information about the host computer.
+ </summary>
+</member>
+<member name="P:IBLRwebforms1.My.MyWebExtension.User">
+ <summary>
+ Returns information for the current Web user.
+ </summary>
+</member>
+<member name="P:IBLRwebforms1.My.MyWebExtension.Request">
+ <summary>
+ Returns Request object.
+ </summary>
+</member>
+<member name="P:IBLRwebforms1.My.MyWebExtension.Response">
+ <summary>
+ Returns Response object.
+ </summary>
+</member>
+<member name="P:IBLRwebforms1.My.MyWebExtension.Log">
+ <summary>
+ Returns the Asp log object.
+ </summary>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarCampo._ScriptManager1">
+<summary>
+ScriptManager1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarCampo._UpdatePanel1">
+<summary>
+UpdatePanel1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarCampo._btnSalvar">
+<summary>
+btnSalvar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarCampo._btnNovoRegistro">
+<summary>
+btnNovoRegistro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarCampo._btnConsultar">
+<summary>
+btnConsultar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarCampo._pnConsulta">
+<summary>
+pnConsulta control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarCampo._lblConsultarCampos">
+<summary>
+lblConsultarCampos control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarCampo._lblCampoConsulta">
+<summary>
+lblCampoConsulta control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarCampo._txtCampoConsulta">
+<summary>
+txtCampoConsulta control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarCampo._btnConsultarCampos">
+<summary>
+btnConsultarCampos control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarCampo._gdCampos">
+<summary>
+gdCampos control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarCampo._pnCadastro">
+<summary>
+pnCadastro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarCampo._ValidationSummary1">
+<summary>
+ValidationSummary1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarCampo._lblDadosCampos">
+<summary>
+lblDadosCampos control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarCampo._lblNome">
+<summary>
+lblNome control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarCampo._RequiredFieldValidator1">
+<summary>
+RequiredFieldValidator1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarCampo._txtNome">
+<summary>
+txtNome control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarCampo._lblIdDados">
+<summary>
+lblIdDados control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarCampo._lblPastorResponsavel">
+<summary>
+lblPastorResponsavel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarCampo._RequiredFieldValidator3">
+<summary>
+RequiredFieldValidator3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarCampo._txtPastorResponsavel">
+<summary>
+txtPastorResponsavel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarCargo._ScriptManager1">
+<summary>
+ScriptManager1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarCargo._UpdatePanel1">
+<summary>
+UpdatePanel1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarCargo._btnSalvar">
+<summary>
+btnSalvar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarCargo._btnNovoRegistro">
+<summary>
+btnNovoRegistro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarCargo._btnConsultar">
+<summary>
+btnConsultar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarCargo._pnConsulta">
+<summary>
+pnConsulta control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarCargo._lblConsultarCampos">
+<summary>
+lblConsultarCampos control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarCargo._lblCampoConsulta">
+<summary>
+lblCampoConsulta control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarCargo._txtCampoConsulta">
+<summary>
+txtCampoConsulta control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarCargo._btnConsultarCargos">
+<summary>
+btnConsultarCargos control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarCargo._gdCargos">
+<summary>
+gdCargos control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarCargo._pnCadastro">
+<summary>
+pnCadastro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarCargo._ValidationSummary1">
+<summary>
+ValidationSummary1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarCargo._lblDados">
+<summary>
+lblDados control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarCargo._lblDescricao">
+<summary>
+lblDescricao control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarCargo._RequiredFieldValidator1">
+<summary>
+RequiredFieldValidator1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarCargo._txtDescricao">
+<summary>
+txtDescricao control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarCargo._lblIdDados">
+<summary>
+lblIdDados control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._ScriptManager1">
+<summary>
+ScriptManager1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._btnSalvar">
+<summary>
+btnSalvar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._btnNovoRegistro">
+<summary>
+btnNovoRegistro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._btnConsultar">
+<summary>
+btnConsultar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._pnConsulta">
+<summary>
+pnConsulta control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._lblConsultarMembros">
+<summary>
+lblConsultarMembros control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._lblCampoConsulta">
+<summary>
+lblCampoConsulta control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._txtCampoConsulta">
+<summary>
+txtCampoConsulta control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._btnConsultarMembros">
+<summary>
+btnConsultarMembros control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._gdMembros">
+<summary>
+gdMembros control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._pnCadastro">
+<summary>
+pnCadastro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._lblNome">
+<summary>
+lblNome control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._RequiredFieldValidator1">
+<summary>
+RequiredFieldValidator1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._lblApelido">
+<summary>
+lblApelido control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._lblCargo">
+<summary>
+lblCargo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._RequiredFieldValidator2">
+<summary>
+RequiredFieldValidator2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._lblAtivo">
+<summary>
+lblAtivo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._txtNome">
+<summary>
+txtNome control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._lblIdDados">
+<summary>
+lblIdDados control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._txtApelido">
+<summary>
+txtApelido control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._ddCargos">
+<summary>
+ddCargos control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._ckbAtivo">
+<summary>
+ckbAtivo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._lblRg">
+<summary>
+lblRg control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._lblCpf">
+<summary>
+lblCpf control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._lblDataNascimento">
+<summary>
+lblDataNascimento control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._RequiredFieldValidator5">
+<summary>
+RequiredFieldValidator5 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._lblEstadoCivil">
+<summary>
+lblEstadoCivil control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._RequiredFieldValidator6">
+<summary>
+RequiredFieldValidator6 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._lblSexo">
+<summary>
+lblSexo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._RequiredFieldValidator7">
+<summary>
+RequiredFieldValidator7 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._txtRG">
+<summary>
+txtRG control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._txtCpf">
+<summary>
+txtCpf control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._txtDataNascimento">
+<summary>
+txtDataNascimento control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._ddEstadoCivil">
+<summary>
+ddEstadoCivil control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._ddSexo">
+<summary>
+ddSexo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._lblNomePai">
+<summary>
+lblNomePai control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._lblNomeMae">
+<summary>
+lblNomeMae control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._lblConjugue">
+<summary>
+lblConjugue control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._txtNomePai">
+<summary>
+txtNomePai control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._txtNomeMae">
+<summary>
+txtNomeMae control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._txtConjugue">
+<summary>
+txtConjugue control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._lblDataAdmissao">
+<summary>
+lblDataAdmissao control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._lblDataBatismo">
+<summary>
+lblDataBatismo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._lblDataConsagracao">
+<summary>
+lblDataConsagracao control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._txtDataAdmissao">
+<summary>
+txtDataAdmissao control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._txtDataBatismo">
+<summary>
+txtDataBatismo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._txtDataConsagracao">
+<summary>
+txtDataConsagracao control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._lblNaturalidade">
+<summary>
+lblNaturalidade control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._ddUfNaturalidade">
+<summary>
+ddUfNaturalidade control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._ddCidadeNaturalidade">
+<summary>
+ddCidadeNaturalidade control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._ddCongregacao">
+<summary>
+ddCongregacao control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._RequiredFieldValidator20">
+<summary>
+RequiredFieldValidator20 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._ddCredencial">
+<summary>
+ddCredencial control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._txtNumCredencial">
+<summary>
+txtNumCredencial control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._ddDepartamento">
+<summary>
+ddDepartamento control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._RequiredFieldValidator8">
+<summary>
+RequiredFieldValidator8 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._lblEndereco1">
+<summary>
+lblEndereco1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._RequiredFieldValidator14">
+<summary>
+RequiredFieldValidator14 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._lblBairro">
+<summary>
+lblBairro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._RequiredFieldValidator15">
+<summary>
+RequiredFieldValidator15 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._lblUf">
+<summary>
+lblUf control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._RequiredFieldValidator16">
+<summary>
+RequiredFieldValidator16 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._lblCidade">
+<summary>
+lblCidade control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._RequiredFieldValidator17">
+<summary>
+RequiredFieldValidator17 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._txtEndereco">
+<summary>
+txtEndereco control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._txtBairro">
+<summary>
+txtBairro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._ddUf">
+<summary>
+ddUf control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._ddCidade">
+<summary>
+ddCidade control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._lblCep">
+<summary>
+lblCep control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._txtCEP">
+<summary>
+txtCEP control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._ValidationSummary2">
+<summary>
+ValidationSummary2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._lblTipoContato">
+<summary>
+lblTipoContato control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._RequiredFieldValidator18">
+<summary>
+RequiredFieldValidator18 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._lblContato">
+<summary>
+lblContato control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._RequiredFieldValidator19">
+<summary>
+RequiredFieldValidator19 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._ddTipoContato">
+<summary>
+ddTipoContato control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._txtContato">
+<summary>
+txtContato control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._btnAddContato">
+<summary>
+btnAddContato control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._lblContatosRelacionados">
+<summary>
+lblContatosRelacionados control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._gdContatos">
+<summary>
+gdContatos control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.pgCadastrarMembro._selected_tab">
+<summary>
+selected_tab control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.relAniversariantes._ScriptManager1">
+<summary>
+ScriptManager1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.relAniversariantes._UpdatePanel1">
+<summary>
+UpdatePanel1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.relAniversariantes._ValidationSummary1">
+<summary>
+ValidationSummary1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.relAniversariantes._lblCongregacao">
+<summary>
+lblCongregacao control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.relAniversariantes._RequiredFieldValidator4">
+<summary>
+RequiredFieldValidator4 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.relAniversariantes._ddCongregacao">
+<summary>
+ddCongregacao control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.relAniversariantes._lblMesAniversario">
+<summary>
+lblMesAniversario control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.relAniversariantes._RequiredFieldValidator2">
+<summary>
+RequiredFieldValidator2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.relAniversariantes._ddMesAniversario">
+<summary>
+ddMesAniversario control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.relAniversariantes._btnConsultar">
+<summary>
+btnConsultar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.relAniversariantes._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.relAniversariantes._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="T:IBLRwebforms1.dsMembros">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:IBLRwebforms1.dsMembros.DataTable1DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:IBLRwebforms1.dsMembros.DataTable1Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:IBLRwebforms1.dsMembros.DataTable1RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:IBLRwebforms1.dsObreiros">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:IBLRwebforms1.dsObreiros.DataTable1DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:IBLRwebforms1.dsObreiros.DataTable1Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:IBLRwebforms1.dsObreiros.DataTable1RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="F:IBLRwebforms1.relMembros._ScriptManager1">
+<summary>
+ScriptManager1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.relMembros._UpdatePanel1">
+<summary>
+UpdatePanel1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.relMembros._ValidationSummary1">
+<summary>
+ValidationSummary1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.relMembros._lblCargo">
+<summary>
+lblCargo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.relMembros._RequiredFieldValidator4">
+<summary>
+RequiredFieldValidator4 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.relMembros._ddCargo">
+<summary>
+ddCargo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.relMembros._btnConsultar">
+<summary>
+btnConsultar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.relMembros._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.relMembros._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.relObreiros._ScriptManager1">
+<summary>
+ScriptManager1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.relObreiros._UpdatePanel1">
+<summary>
+UpdatePanel1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.relObreiros._ValidationSummary1">
+<summary>
+ValidationSummary1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.relObreiros._lblCargo">
+<summary>
+lblCargo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.relObreiros._RequiredFieldValidator4">
+<summary>
+RequiredFieldValidator4 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.relObreiros._ddCargo">
+<summary>
+ddCargo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.relObreiros._btnConsultar">
+<summary>
+btnConsultar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.relObreiros._ReportViewer1">
+<summary>
+ReportViewer1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.relObreiros._ObjectDataSource1">
+<summary>
+ObjectDataSource1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.SiteMaster._HeadContent">
+<summary>
+HeadContent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.SiteMaster._loginLink">
+<summary>
+loginLink control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.SiteMaster._logoff">
+<summary>
+logoff control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.SiteMaster._registerLink">
+<summary>
+registerLink control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.SiteMaster._A1">
+<summary>
+A1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.SiteMaster._A2">
+<summary>
+A2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.SiteMaster._statusLogin">
+<summary>
+statusLogin control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.SiteMaster._FeaturedContent">
+<summary>
+FeaturedContent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.SiteMaster._MainContent">
+<summary>
+MainContent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._ScriptManager1">
+<summary>
+ScriptManager1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._UpdatePanel1">
+<summary>
+UpdatePanel1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._btnSalvar">
+<summary>
+btnSalvar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._btnNovoRegistro">
+<summary>
+btnNovoRegistro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._btnConsultar">
+<summary>
+btnConsultar control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._pnConsulta">
+<summary>
+pnConsulta control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._lblConsultarMembros">
+<summary>
+lblConsultarMembros control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._lblConsultarPor">
+<summary>
+lblConsultarPor control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._lblCampoConsulta">
+<summary>
+lblCampoConsulta control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._ddTipoConsulta">
+<summary>
+ddTipoConsulta control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._txtCampoConsulta">
+<summary>
+txtCampoConsulta control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._btnConsultarCongregacoes">
+<summary>
+btnConsultarCongregacoes control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._gdCongregacoes">
+<summary>
+gdCongregacoes control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._pnCadastro">
+<summary>
+pnCadastro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._ValidationSummary1">
+<summary>
+ValidationSummary1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._lblDadosCongregacao">
+<summary>
+lblDadosCongregacao control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._lblNome">
+<summary>
+lblNome control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._RequiredFieldValidator1">
+<summary>
+RequiredFieldValidator1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._lblDataFundacao">
+<summary>
+lblDataFundacao control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._RequiredFieldValidator4">
+<summary>
+RequiredFieldValidator4 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._txtNome">
+<summary>
+txtNome control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._lblIdDados">
+<summary>
+lblIdDados control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._txtDataFundacao">
+<summary>
+txtDataFundacao control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._lblPastorResponsavel">
+<summary>
+lblPastorResponsavel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._RequiredFieldValidator3">
+<summary>
+RequiredFieldValidator3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._lblCampo">
+<summary>
+lblCampo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._RequiredFieldValidator2">
+<summary>
+RequiredFieldValidator2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._txtPastorResponsavel">
+<summary>
+txtPastorResponsavel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._ddCampo">
+<summary>
+ddCampo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._lblLocalizacao">
+<summary>
+lblLocalizacao control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._lblEndereco1">
+<summary>
+lblEndereco1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._RequiredFieldValidator8">
+<summary>
+RequiredFieldValidator8 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._lblBairro">
+<summary>
+lblBairro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._RequiredFieldValidator9">
+<summary>
+RequiredFieldValidator9 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._lblUf">
+<summary>
+lblUf control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._RequiredFieldValidator10">
+<summary>
+RequiredFieldValidator10 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._lblCidade">
+<summary>
+lblCidade control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._RequiredFieldValidator11">
+<summary>
+RequiredFieldValidator11 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._txtEndereco">
+<summary>
+txtEndereco control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._txtBairro">
+<summary>
+txtBairro control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._ddUf">
+<summary>
+ddUf control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._ddCidade">
+<summary>
+ddCidade control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._lblCep">
+<summary>
+lblCep control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._txtCEP">
+<summary>
+txtCEP control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._lblContatos">
+<summary>
+lblContatos control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._ValidationSummary2">
+<summary>
+ValidationSummary2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._lblTipoContato">
+<summary>
+lblTipoContato control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._RequiredFieldValidator5">
+<summary>
+RequiredFieldValidator5 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._lblContato">
+<summary>
+lblContato control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._RequiredFieldValidator6">
+<summary>
+RequiredFieldValidator6 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._ddTipoContato">
+<summary>
+ddTipoContato control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._txtContato">
+<summary>
+txtContato control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._btnAddContato">
+<summary>
+btnAddContato control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._lblContatosRelacionados">
+<summary>
+lblContatosRelacionados control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:IBLRwebforms1.CadastrarCongregacao._gdContatos">
+<summary>
+gdContatos control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+</members>
+</doc>
